@@ -84,8 +84,8 @@ group.
      be either automatically or manually assigned.
 
    * You must have exactly one cohort for verified track learners, and it must
-     be manually assigned. You provide the name of this verified track cohort
-     to your partner manager.
+     be manually assigned. You provide the exact case sensitive name of this
+     verified track cohort to your partner manager.
 
    * After your partner manager configures your course for verified track
      cohorting using the verified track cohort name that you provide, you
@@ -126,8 +126,8 @@ learners in each track using cohorts and content groups, follow these steps.
      be either automatically or manually assigned.
 
    * You must have exactly one cohort for verified track learners, and it must
-     be manually assigned. You provide the name of this verified track cohort
-     to your partner manager.
+     be manually assigned. You provide the exact case sensitive name of this
+     verified track cohort to your partner manager.
 
    * After your partner manager configures your course for verified track
      cohorting using the verified track cohort name that you provide, you
@@ -172,7 +172,7 @@ In the instructor dashboard in the LMS, follow these steps to set up cohorts.
 
    .. Important:: When you contact your partner manager in :ref:`Step 4 <Step
       4 Request Configuration Verified Track Cohorts>`, you provide the
-      verified track cohort's name.
+      verified track cohort's exact case sensitive name.
 
       After your partner manager configures your course for verified track
       cohorting using the verified track cohort name that you provide, you
@@ -332,14 +332,14 @@ your course, you must follow these requirements.
   set up with the **Manual** assignment method.
 
   You can only have one cohort that will receive verified track content. The
-  cohort must be defined as having **Manual** learner assignment, but learners
-  are assigned to this cohort automatically by edx when they enroll in or
+  cohort must be defined as having **Manual** learner assignment. Learners
+  are assigned to this cohort automatically by edX when they enroll in or
   upgrade to the verified track for your course.
 
-* Provide the name of the cohort you will use for your verified track learners
-  to your partner manager. After your course has been configured to use verified
-  track cohorting, you will not be able to change the name of the verified track
-  cohort, or to disable cohorts in the course.
+* Provide the exact, case sensitive name of the cohort you will use for your
+  verified track learners to your partner manager. After your course has been
+  configured to use verified track cohorting, you will not be able to change the
+  name of the verified track cohort, or to disable cohorts in the course.
 
 
 
