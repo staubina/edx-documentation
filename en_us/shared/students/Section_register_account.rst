@@ -1,3 +1,4 @@
+
 You create, or register, an edx.org or edX Edge account on the registration
 page for edx.org or edX Edge. You can create an account in different ways.
 

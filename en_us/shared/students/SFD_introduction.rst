@@ -5,9 +5,9 @@ Welcome!
 #################
 
 Welcome to online learning with edX! At edX, we are glad to welcome new
-learners to the `edx.org`_ website, and to all of the other websites
-that use the Open edX platform to deliver courses around the world. We hope
-that you are as excited about online learning as we are.
+learners to the `edx.org`_ website or to the edX mobile app, as well as to all
+of the other websites that use the Open edX platform to deliver courses around
+the world. We hope that you are as excited about online learning as we are.
 
 The purpose of this guide is to help with your transition to online learning.
 The guide answers common questions about topics like getting started in an
@@ -17,6 +17,7 @@ completing some of the exercises you may see in your course.
 This guide is continuously being updated and expanded, so we encourage you to
 let us know what was helpful, and what was not, by selecting **Feedback** on
 any page or by sending an email message to `docs@edx.org`_.
+
 
 ******************
 Learning in a MOOC
