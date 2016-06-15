@@ -5,7 +5,8 @@
 Anatomy of edX Course Discussions
 #######################################
 
-This topic describes how course discussions are organized in an edX course.
+This section describes discussions in edX courses and explains how to
+participate in course discussions.
 
 .. contents::
   :local:
@@ -15,18 +16,17 @@ This topic describes how course discussions are organized in an edX course.
 Basic Elements: Posts, Responses, and Comments
 **********************************************
 
-Discussions are made up of *posts*, *responses*, and *comments*. Together,
-posts, responses, and comments are known as *contributions*, and a post
-together with its responses and comments is an *exchange*.
+Course discussions are made up of conversation topics, which in turn are made
+up of posts, responses, and comments.
 
-* Posts initiate a conversation by asking a question or making a statement
-  for learners to consider.
+* Posts initiate a conversation by asking a question or making a statement.
 
 * Responses reply directly to the post.
 
 * Comments, in turn, reply to specific responses.
 
-The following conversation shows each of these contributions:
+The following example shows each of these types of contributions to a
+discussion.
 
 ::
 
@@ -41,15 +41,27 @@ The following conversation shows each of these contributions:
     - Response: "Hi from Johannesburg! I am taking the course to prepare for my
       matric exams."
 
-You can see posts, comments, and responses, as well as other information about
-the course discussions and individual posts, on the **Discussion** page.
+You can read or add posts, comments, and responses in your course's discussion
+on the **Discussion** page.
+
 
 ********************
 The Discussion Page
 ********************
 
-When you go to the **Discussion** page in your course, you see a page that
-looks like the following image. You can select the image to enlarge it.
+The **Discussion** page for your course is the location where you can browse
+and contribute to course discussions.
+
+===========================
+Discussion Navigation Pane
+===========================
+
+On the **Discussion** page, use the discussion navigation pane to access all
+of the discussion topics in your course. You can search topics by keyword, use
+filters to reduce the number of topics that are shown at one time, mark topics
+as favorites, or sort topics by status, and activity.
+
+The following image shows the elements of the discussion navigation pane.
 
 .. image:: ../../../shared/students/Images/DiscussionHomeCallouts.png
    :width: 800
@@ -57,15 +69,6 @@ looks like the following image. You can select the image to enlarge it.
        of the "How to use edX discussions" pane. Numbered callouts indicate the
        elements on this page.
 
-===========================
-Discussion Navigation Pane
-===========================
-
-The discussion navigation pane shows titles and information for all the
-individual posts in the course. The discussion navigation pane also has filters
-that you can use to sort discussions by topic, status, and activity.
-
-The discussion navigation pane includes the following elements.
 
 #. The drop-down discussion list. When you select this list, you can see all of
    the topics in the course discussions, or you can view only the posts that
