@@ -42,10 +42,10 @@ Creating a Checkbox Problem
 
 You can create checkbox problems in the simple editor or in the advanced
 editor. You can set up a problem in the simple editor, and then switch to the
-advanced editor to add more configuration options in XML. However, you cannot
-switch back to the simple editor from the advanced editor. Therefore, you
-might want to format the problem as completely as possible before you begin to
-use the advanced editor.
+advanced editor to add more configuration options in OLX (Open Learning XML).
+However, you cannot switch back to the simple editor from the advanced editor.
+Therefore, you might want to format the problem as completely as possible
+before you begin to use the advanced editor.
 
 .. _Use the Simple Editor to Create a Checkbox Problem:
 
@@ -113,7 +113,7 @@ Use the Advanced Editor to Edit a Checkbox Problem
 To use the :ref:`advanced editor<Advanced Editor>` to edit a checkbox
 problem, follow these steps.
 
-#. Follow the steps for creating the problem in the :ref:`simple editor<Use
+#. Create the problem and make changes as needed in the :ref:`simple editor<Use
    the Simple Editor to Create a Checkbox Problem>`.
 #. Select **Advanced Editor**, and then edit the XML to add the tags and
    attributes you want. An example follows.
@@ -121,14 +121,14 @@ problem, follow these steps.
 .. code-block:: xml
 
   <problem>
-  <p>Learning about the benefits of preventative healthcare can be particularly difficult. Check all of the reasons below why this may be the case.</p>
-
   <choiceresponse>
-    <checkboxgroup label="Check all of the reasons below why this may be the case">
-      <choice correct="true"><text>A large amount of time passes between undertaking a preventative measure and seeing the result.</text></choice>
-      <choice correct="false"><text>Non-immunized people will always fall sick.</text></choice>
-      <choice correct="true"><text>If others are immunized, fewer people will fall sick regardless of a particular individual's choice to get immunized or not.</text></choice>
-      <choice correct="true"><text>Trust in healthcare professionals and government officials is fragile.</text></choice>
+     <p>Learning about the benefits of preventative healthcare can be particularly difficult. </p>
+     <label>Check all of the reasons below why this may be the case.</label>
+     <checkboxgroup label="Check all of the reasons below why this may be the case">
+         <choice correct="true"><text>A large amount of time passes between undertaking a preventative measure and seeing the result.</text></choice>
+         <choice correct="false"><text>Non-immunized people will always fall sick.</text></choice>
+         <choice correct="true"><text>If others are immunized, fewer people will fall sick regardless of a particular individual's choice to get immunized or not.</text></choice>
+         <choice correct="true"><text>Trust in healthcare professionals and government officials is fragile.</text></choice>
     </checkboxgroup>
   </choiceresponse>
 
@@ -292,48 +292,44 @@ For example, the following problem has feedback for each option.
 
 .. code-block:: xml
 
+  <problem>
   <choiceresponse>
-    <checkboxgroup label="Which of the following is an example
-    of a fruit? Check all that apply.">
-      <choice correct="true">apple
-        <choicehint selected="true">You are correct that an apple is a fruit
-          because it is the fertilized ovary that comes from an apple tree and
-          contains seeds.
-        </choicehint>
-        <choicehint selected="false">Remember that an apple is also a
-          fruit.
-        </choicehint>
-      </choice>
-      <choice correct="true">pumpkin
-        <choicehint selected="true">You are correct that a pumpkin is a fruit
-          because it is the fertilized ovary of a squash plant and contains
-          seeds.
-        </choicehint>
-        <choicehint selected="false">Remember that a pumpkin is also a
-          fruit.
-        </choicehint>
-      </choice>
-      <choice correct="false">potato
-        <choicehint selected="true">A potato is a vegetable, not a fruit,
-          because it does not come from the flower on a plant or tree and does
-          not contain seeds.
-        </choicehint>
-        <choicehint selected="false">You are correct that a potato is
-          classified as a vegetable because it is an edible part of a plant in
-          tuber form.
-        </choicehint>
-      </choice>
-      <choice correct="true">tomato
-        <choicehint selected="true">You are correct that a tomato is
-          classified as a fruit because it is the fertilized ovary of a tomato
-          plant and contains seeds.
-        </choicehint>
-        <choicehint selected="false">Many people mistakenly think a tomato is
-          a vegetable. However, because a tomato is the fertilized ovary of a
-          tomato plant and contains seeds it is classified as a fruit.
-        </choicehint>
-      </choice>
-    </checkboxgroup>
+     <label>"Which of the following is an example of a fruit? Check all
+     that apply.</label>
+     <checkboxgroup label="Which of the following is an example
+     of a fruit? Check all that apply.">
+         <choice correct="true">apple
+           <choicehint selected="true">You are correct that an apple is a fruit
+           because it is the fertilized ovary that comes from an apple tree and
+           contains seeds.</choicehint>
+           <choicehint selected="false">Remember that an apple is also a
+             fruit.</choicehint>
+         </choice>
+         <choice correct="true">pumpkin
+            <choicehint selected="true">You are correct that a pumpkin is a
+            fruit because it is the fertilized ovary of a squash plant and
+            contains seeds.</choicehint>
+            <choicehint selected="false">Remember that a pumpkin is also a
+            fruit.</choicehint>
+         </choice>
+         <choice correct="false">potato
+            <choicehint selected="true">A potato is a vegetable, not a fruit,
+             because it does not come from the flower on a plant or tree and
+             does not contain seeds.</choicehint>
+             <choicehint selected="false">You are correct that a potato is
+             classified as a vegetable because it is an edible part of a plant
+             in tuber form.</choicehint>
+         </choice>
+         <choice correct="true">tomato
+             <choicehint selected="true">You are correct that a tomato is
+             classified as a fruit because it is the fertilized ovary of a
+             tomato plant and contains seeds.</choicehint>
+             <choicehint selected="false">Many people mistakenly think a
+             tomato is a vegetable. However, because a tomato is the
+             fertilized ovary of a tomato plant and contains seeds it is
+             classified as a fruit.</choicehint>
+         </choice>
+     </checkboxgroup>
   </choiceresponse>
 
 Configure Compound Feedback
@@ -502,9 +498,9 @@ Partial credit using the halves method is calculated as follows.
 
 * If a learner makes no errors, she receives full credit for the problem.
 
-* If a learner makes one error, she receives 50% of the possible points, as long
-  as there are three or more choices in the problem. If a learner makes one
-  error and there are only two choices in the problem, no credit is given.
+* If a learner makes one error, she receives 50% of the possible points, as
+  long as there are three or more choices in the problem. If a learner makes
+  one error and there are only two choices in the problem, no credit is given.
 
 * If a learner makes two errors, she receives 25% of the possible points, as
   long as there are five or more choices in the problem. If a learner makes two
@@ -665,8 +661,8 @@ Template
 .. code-block:: xml
 
   <problem>
-  <legend>Question text</legend>
   <choiceresponse>
+  <label>Question text</label>
     <checkboxgroup label="label text">
       <choice correct="false">
         Answer option A (incorrect)
@@ -724,6 +720,8 @@ Tags
 
 * ``<choiceresponse>`` (required): Specifies that the problem contains options
   for learners to choose from.
+
+* ``<label>`` (required): Specifies the question for learners to answer.
 
 * ``<checkboxgroup>`` (required): Specifies that the problem is a checkbox
   problem.
