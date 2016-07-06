@@ -10,7 +10,7 @@ In the simple editor, you configure hints with the following syntax.
   ||Hint 2||
   ||Hint n||
 
-.. note:: 
+.. note::
   You can configure any number of hints. The learner views one hint at a time
   and views the next one by selecting **Hint** again.
 
@@ -30,13 +30,18 @@ within the ``<demandhint>`` element.
 
 .. code-block:: xml
 
-  <demandhint>
-    <hint>Hint 1</hint>
-    <hint>Hint 2</hint>
-    <hint>Hint 3</hint>
-  </demandhint>
+  <problem>
+  .
+  .
+  .
+     <demandhint>
+       <hint>Hint 1</hint>
+       <hint>Hint 2</hint>
+       <hint>Hint 3</hint>
+     </demandhint>
+  </problem>
 
-For example, the following XML shows two hints.
+For example, the following XML adds two hints to a problem.
 
 .. code-block:: xml
 

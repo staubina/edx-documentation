@@ -623,6 +623,13 @@ N
 O
 ****
 
+**Open Learning XML (OLX)**
+
+OLX is the XML-based standard that is used to build courses on the Open
+edX platform.
+
+For more information, see :ref:`olx:What is Open Learning XML?`.
+
 .. _Open Response Assessment_g:
 
 **Open Response Assessment**
