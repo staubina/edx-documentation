@@ -18,20 +18,26 @@ Exercises`.
 Overview
 ******************************
 
-The problem component allows you to add interactive, automatically
-graded exercises to your course content. You can create many different
-types of problems in Studio.
+The problem component allows you to add interactive exercises to the
+:ref:`units<The Unit Workflow>` in your course. You can add many different
+types of exercises and problems.
 
-******************************
-Graded Problems
-******************************
+=====================================
+Creating Graded or Ungraded Problems
+=====================================
 
-All problems receive a point score, but, by default, problems do not count
-toward a learner's grade.
+When you :ref:`establish the grading policy<Grading Index>` for your course,
+you define the assignment types that will count toward learners' grades; for
+example, homework, lab, midterm, and final.
 
-To have problems to count toward the grade, change the assignment type of the
-subsection that contains the problems. For more information, see :ref:`Set the
-Assignment Type and Due Date for a Subsection`.
+As you develop your course, you can add problem components to the units in any
+subsection. The problem components that you add automatically inherit the
+assignment type that is defined at the subsection level. You can only set
+assignment types at the subsection level, not for units or individual problem
+components.
+
+For more information, see :ref:`Set the Assignment Type and Due Date for a
+Subsection` and :ref:`Grading Index`.
 
 .. _Problem Learner View:
 
@@ -43,16 +49,20 @@ Assignment Type and Due Date for a Subsection`.
 The Studio View of a Problem
 ************************************
 
-All problems are written in XML. However, Studio offers two interfaces for
-editing problem components: the simple editor and the advanced editor.
+The information that you specify for every problem component is saved in OLX
+(Open Learning XML), edX's XML standard. However, for many problem components
+Studio offers two different editing interfaces: the simple editor and the
+advanced editor.
 
-*  The simple editor allows you to edit problems visually, without
-   having to work with XML.
+*  The simple editor allows you to edit problems visually, and you use
+   markdown-style formatting indicators to identify elements such as the
+   question and the correct answer. You do not need to know XML to use this
+   editor.
 
-*  The advanced editor converts the problem to edX's XML standard and
-   allows you to edit that XML directly.
+*  The advanced editor presents problems with their OLX markup elements and
+   attributes. You can edit problems in the advanced editor as well.
 
-You can switch at any time from the simple editor to the advanced editor by
+You can switch from the simple editor to the advanced editor at any time by
 selecting **Advanced Editor** from the simple editor's toolbar. However, after
 you save a problem in the advanced editor, you cannot open it again in the
 simple editor.
@@ -63,24 +73,18 @@ simple editor.
 The Simple Editor
 =================
 
-When you select the following problem types, the simple editor opens with a
-preformatted example problem.
+When you add a problem component of one of these types, the simple editor opens
+with a preformatted example problem.
 
-*  :ref:`Checkbox`: In checkbox problems, learners select one or more options
-   from a list of possible answers.
+*  :ref:`Checkbox`
 
-*  :ref:`Dropdown`: In dropdown problems, learners select one answer from a
-   dropdown list.
+*  :ref:`Dropdown`
 
-*  :ref:`Multiple Choice`: Multiple choice problems require learners to select
-   one answer from a list of choices that appear below the problem text.
+*  :ref:`Multiple Choice`
 
-*  :ref:`Numerical Input`: Numerical input problems require answers that
-   include only integers, fractions, and a few common constants and
-   operators.
+*  :ref:`Numerical Input`
 
-*  :ref:`Text Input`: In text input problems, learners enter a short text
-   answer.
+*  :ref:`Text Input`
 
 The following image shows an example multiple choice problem in the simple
 editor.
@@ -98,39 +102,52 @@ of the toolbar options.
 
 Descriptions of the toolbar options follow.
 
-#. **Heading**: Formats text as a title or heading.
+#. **Heading**: Formats the selected text as a title or heading by adding a
+   series of equals signs (``=``) below it on the next line.
 
-#. **Multiple Choice**: Identifies text as an answer option for a multiple
-   choice problem.
+#. **Multiple Choice**: Formats the selected text as an answer option for a
+   multiple choice problem by adding a pair of parentheses (``( )``) before it.
+   To identify the correct answer option, you insert an ``x``: (``(x)``).
 
-#. **Checkboxes**: Identifies text as an answer option for a checkboxes
-   problem.
+#. **Checkboxes**: Formats the selected text as an answer option for a
+   checkboxes problem by adding a pair of brackets (``[ ]``) before it. To
+   identify the correct answer option or options, you insert an ``x``:
+   (``[x]``).
 
-#. **Text Input**: Identifies text as the correct answer for a text input
-   problem.
+#. **Text Input**: Formats the selected text as the correct answer for a text
+   input problem by adding an equals sign (``=``) before it on the same line.
 
-#. **Numerical Input**: Identifies the correct answer, with an optional
-   tolerance, for a numerical input problem.
+#. **Numerical Input**: Formats the selected value as the correct answer for a
+   numerical input problem by adding an equals sign (``=``) before it on the
+   same line.
 
-#. **Dropdown**: Identifies a comma-separated list as correct and incorrect
-   answer options for a dropdown problem.
+#. **Dropdown**: Formats a comma-separated list of values as the set of answer
+   options for a dropdown problem by adding two pairs of brackets (``[[ ]]``)
+   around the list. To identify the correct answer option, you add parentheses
+   (``( )``) around that option.
 
-#. **Explanation**: Formats text as an explanation that appears after learners
-   select **Show Answer**.
+#. **Explanation**: Formats the selected text as the explanation for the
+   correct answer by adding an ``[explanation]`` tag to the lines before and
+   after the text. An explanation appears only after learners select **Show
+   Answer**. You define when this option is available to learners with the
+   :ref:`Show Answer` setting.
 
-#. Opens the problem in the advanced editor.
+#. Opens the problem in the :ref:`advanced editor<Advanced Editor>` which shows
+   the OLX markup for the problem.
 
 #. Opens a list of formatting hints.
 
 #. **Accessible Label**: Identifies the part of the problem text that is the
-   specific question that learners will answer by selecting the options that
-   follow, or by entering a text or numeric response. The toolbar does not have
-   an option that provides this formatting, so you type two angle brackets on
-   either side of the question text pointing inward. For example, ``>>Is this
-   the question text?<<``.
+   specific question that learners need to answer. The toolbar does not have an
+   option that provides this formatting, so you add two pairs of inward-
+   pointing angle brackets (``>> <<``) around the text. For example, ``>>Is
+   this the question text?<<``.
+
+   Optionally, you can add guidance that helps learners answer the question as part of the accessibile label. For example, when you add a checkbox problem that is only correct when leareners select three of the answer options, you might include the tip "Be sure to select all that apply." To add this description, you include it after the question with =in the angle brackets, and then you separate the question and the description by inserting a pair of pipe symbols (``||``). For example, ``>>Is
+   this the question text?<<``.
 
    * Screen readers read all of the text that you supply for the problem, and
-     then repeat the text that you identify with this formatting immediately
+     then repeat the text identified as the accessibile label immediately
      before reading the answer choices for the problem.
 
    * The :ref:`Student_Answer_Distribution` report uses the text with this
@@ -145,9 +162,8 @@ Descriptions of the toolbar options follow.
 The Advanced Editor
 ===================
 
-The advanced editor opens a problem in XML. Templates for problems such as
-such as drag and drop and math expression input open directly in the advanced
-editor.
+The advanced editor shows the OLX markup for a problem. Templates for some problem types, such as math expression input, open
+directly in the advanced editor.
 
 The following image shows the multiple choice problem above in the advanced
 editor instead of the simple editor.
@@ -406,7 +422,7 @@ Show Answer
 ===============
 
 This setting defines when learners are shown the answers to a problem and has
-the following options
+the following options.
 
 .. list-table::
    :widths: 15 70
