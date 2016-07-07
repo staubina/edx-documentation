@@ -143,11 +143,17 @@ Descriptions of the toolbar options follow.
    pointing angle brackets (``>> <<``) around the text. For example, ``>>Is
    this the question text?<<``.
 
-   Optionally, you can add guidance that helps learners answer the question as part of the accessibile label. For example, when you add a checkbox problem that is only correct when leareners select three of the answer options, you might include the tip "Be sure to select all that apply." To add this description, you include it after the question with =in the angle brackets, and then you separate the question and the description by inserting a pair of pipe symbols (``||``). For example, ``>>Is
-   this the question text?<<``.
+   Optionally, you can add guidance that helps learners answer the question as
+   part of the accessible label. For example, when you add a checkbox problem
+   that is only correct when learners select three of the answer options, you
+   might include the tip "Be sure to select all that apply." To add this
+   description, you include it after the question within the angle brackets,
+   and then you separate the question and the description by inserting a pair
+   of pipe symbols (``||``) between them. For example, ``>>Which of the
+   following choices is correct? ||Be sure to select all that apply.<<``.
 
    * Screen readers read all of the text that you supply for the problem, and
-     then repeat the text identified as the accessibile label immediately
+     then repeat the text identified as the accessible label immediately
      before reading the answer choices for the problem.
 
    * The :ref:`Student_Answer_Distribution` report uses the text with this

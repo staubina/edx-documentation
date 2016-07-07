@@ -28,9 +28,9 @@ one correct answer.
    questions. Checkbox problems with ambiguity can be frustrating to learners,
    especially if the problems have a limited number of attempts.
 
-**************************************************
+==========================================
 Analyzing Performance on Checkbox Problems
-**************************************************
+==========================================
 
 For the checkbox problems in your course, you can use edX Insights to review
 aggregated learner performance data and examine submitted answers. For more
@@ -42,7 +42,7 @@ Creating a Checkbox Problem
 
 You can create checkbox problems in the simple editor or in the advanced
 editor. You can set up a problem in the simple editor, and then switch to the
-advanced editor to add more configuration options in OLX (Open Learning XML).
+advanced editor to change problem configuration using OLX (Open Learning XML).
 However, you cannot switch back to the simple editor from the advanced editor.
 Therefore, you might want to format the problem as completely as possible
 before you begin to use the advanced editor.
@@ -53,38 +53,49 @@ before you begin to use the advanced editor.
 Use the Simple Editor to Create a Checkbox Problem
 ======================================================
 
-To use the :ref:`simple editor<Simple Editor>` to create a checkbox problem,
-follow these steps.
+To use the simple editor to create a checkbox problem, follow these steps.
 
 #. In the unit where you want to create the problem, under **Add New
    Component** select **Problem**.
+
 #. Select one of the two checkbox problem templates.
 
   * From the list of **Common Problem Types**, select **Checkboxes**.
 
   * From the list of **Common Problems with Hints and Feedback**, select
-    **Checkboxes with Hints and Feedback**. For more information, see `Use
-    Feedback in a Checkbox Problem`_.
+    **Checkboxes with Hints and Feedback**. For more information about these
+    additional options, see `Use Feedback in a Checkbox Problem`_.
 
-    Studio adds the checkbox problem to the unit.
+   Studio adds the checkbox problem to the unit.
 
-#. Select **Edit**. The simple editor opens.
+#. Select **Edit**. The :ref:`simple editor<Simple Editor>` opens.
+
 #. Replace the sample problem text with your own text.
-#. Determine the text that describes the question you want learners to answer,
-   and surround that text with two pairs of angle brackets (``>>question<<``).
-   This text identifies the question for screen readers, reports, and Insights.
-#. Edit the text to place each answer option on a separate line.
-#. Select the set of answer options, and then select **Checkboxes** from the
-   toolbar. A pair of brackets appears next to each answer choice.
-#. To identify each correct answer, add an **x** between the brackets for that
-   option.
-#. To provide an explanation, select the explanation text and then select
-   **Explanation** from the toolbar. ``[explanation]`` appears before
-   and after the explanation text.
+
+#. Identify the question you want learners to answer, and surround that text
+   with two pairs of angle brackets (``>>question<<``). This text identifies
+   the question for screen readers, reports, and Insights.
+
+#. Use the **Checkboxes** option to add a pair of brackets (``[ ]``) before
+   each answer choice.
+
+#. Identify each correct answer by adding an ``x`` between the brackets for
+   that option: (``[x]``).
+
+#. Optionally, add guidance to help learners answer the question after the
+   question but within the angle brackets. Separate the question and the
+   guidance with a pair of pipe symbols (``||``). For example, ``>>Which of the
+   following choices is correct? ||Be sure to select all that apply.<<``.
+
+#. Optionally, provide an explanation for the correct answer, and then select
+   **Explanation**.
+
 #. Select **Settings** and provide an identifying **Display Name** for the
    problem.
+
 #. Define additional settings for the problem. For more information, see
    :ref:`Problem Settings`.
+
 #. Select **Save**.
 
 For the example problem illustrated above, the following text displays in the
@@ -92,8 +103,7 @@ problem component.
 
 ::
 
-    Learning about the benefits of preventative healthcare can be particularly
-    difficult. >>Check all of the reasons below why this may be the case.<<
+    >>Learning about the benefits of preventative healthcare can be particularly difficult. ||Check all of the reasons below why this may be the case.<<
 
     [x] A large amount of time passes between undertaking a preventative measure and seeing the result.
     [ ] Non-immunized people will always fall sick.
@@ -115,7 +125,8 @@ problem, follow these steps.
 
 #. Create the problem and make changes as needed in the :ref:`simple editor<Use
    the Simple Editor to Create a Checkbox Problem>`.
-#. Select **Advanced Editor**, and then edit the XML to add the tags and
+
+#. Select **Advanced Editor**, and then edit the OLX to add the tags and
    attributes you want. An example follows.
 
 .. code-block:: xml
