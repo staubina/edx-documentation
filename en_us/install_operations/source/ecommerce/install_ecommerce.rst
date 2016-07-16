@@ -228,6 +228,10 @@ this command.
      - Yes
      - Address from which email messages are sent.
      - ``--from-email=notifications@example.com``
+   * - ``--enable-enrollment-codes``
+     - No
+     - Enabling the creation of enrollment codes for seats.
+     - ``--enable-enrollment-codes=True``
 
 
 To add another site, use the appropriate settings module for your environment
